@@ -4,15 +4,15 @@ SEOTitle: cugblack's blog
 header-img: img/post-bg-desk.jpg
 email: cugblack@gmail.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 黑黑 的博客, cugblack, 黑志强, container, devops, kubernetes"
+keyword: "BY,  cugblack's blog, cugblack, 黑志强, container, devops, kubernetes"
 url: "http://cugblack.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/cugblack/cugblack.github.io.git" # you code repository
 
 # Sidebar settings
-sidebar: false                           # whether or not using Sidebar.
+sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/20190225145202.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
