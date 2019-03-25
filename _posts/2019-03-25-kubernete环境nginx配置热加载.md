@@ -11,7 +11,11 @@ tags:
     - configMap
     - nginx
 ---
+
+
 >kubernetes环境下nginx使用configMap挂载配置并实现热加载
+
+
 
 # 前提
 
