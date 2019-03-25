@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Git指令整理
+title:      kubernetes环境下nginx配置热加载
 subtitle:   kubernetes环境下nginx配置热加载
 date:       2019-03-25
 author:     cugblack
