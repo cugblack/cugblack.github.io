@@ -112,7 +112,8 @@ kubernetes内有两种对资源分配管理相关的控制策略插件  `Resourc
         services.loadbalancers: "5"
         
  ---
- ###请求与条件
+ 
+ ### 请求与条件
  
 分配计算资源时，每个容器可以为CPU或内存指定请求和约束。 也可以设置两者中的任何一个。
 
@@ -121,7 +122,9 @@ kubernetes内有两种对资源分配管理相关的控制策略插件  `Resourc
 >如果配置了配额但是创建资源时没有声明对应的限制或者requst，则资源无法创建成功。
 
 
-##配置默认namespace资源请求与限制-limitRange
+
+## 配置默认namespace资源请求与限制-limitRange
+
 
 >给命名空间namespace创建默认的request与limit
 
