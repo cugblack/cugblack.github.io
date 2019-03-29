@@ -14,7 +14,7 @@ tags:
     - namespace
 ---
 
-> kubernets集群内，容器与pod消耗或者占据资源的多少，如何合理的分配并使用集群的资源至关重要，这就涉及到了kubernetes内的两个资源指标，`ResourceQuato`与`LimitRange`
+> kubernets集群内，容器与pod消耗或者占据资源的多少，如何合理的分配并使用集群的资源至关重要，这就涉及到了kubernetes内的两个资源指标，`ResourceQuota`与`LimitRange`
 
 ---
 ## 为什么需要资源配额与资源限制
@@ -75,7 +75,7 @@ kubernetes内有两种对资源分配管理相关的控制策略插件  `Resourc
         requests.cpu: "2"      #非终止态的所有pod, cpu请求总量不能超出此值。
         requests.memory: 100Gi #非终止态的所有pod, 内存请求总量不能超出此值。
         limits.cpu: "4"        #非终止态的所有pod， cpu限制总量不能超出此值。
-        limits.memory: 200Gi   非终止态的所有pod, 内存限制总量不能超出此值。
+        limits.memory: 200Gi   #非终止态的所有pod, 内存限制总量不能超出此值。
 
 ---
 #### 存储资源配额
@@ -157,16 +157,16 @@ kubernetes内有一种资源`limitRange`，用来对namespace设置资源请求r
      
  ---
  
- ## 质量指标Qos(quality of service)
- 
- ### 质量指标有三种：
+## 质量指标Qos(quality of service)
+
+### 质量指标有三种：
  
      Guareteen ：Pod 里的每个容器都必须有内存限制和请求，而且必须是一样的。
      Burstable ：Pod 不满足 QoS 等级 Guaranteed 的要求，且pod内至少有一个容器有内存或者 CPU 请求。
      BestEffort：Pod 里的容器必须没有任何内存或者 CPU　的限制或请求。
  
  
- ### 资源回收策略
+### 资源回收策略
  
  >cpu为可压缩资源，当cpu资源即将耗尽时会进行资源压缩，压缩分配给pod的cpu，但不会kill。
  
