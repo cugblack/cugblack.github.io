@@ -98,7 +98,8 @@ service-worker: true
 
 # Friends
 friends: [
-           https://github.com/cugblack
+        title: "My GITHUB",
+        href: " https://github.com/cugblack"
 ]
 
 theme: jekyll-theme-merlot
